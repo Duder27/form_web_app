@@ -9,10 +9,10 @@ def render_main():
 @app.route("/response")
 def render_response():
     r1 = request.args['r1'] 
-    if r1 == 'Chattel':
-        reply = "That's my name too!!"
+    if r1 == 'Chatty':
+        reply = "Wow, that's my name too!"
     else:
-        reply = "My favorite color is pink."
+        reply = "That's a very nice name. My name is Chatty."
     return render_template('response.html', response = reply)
     
     
