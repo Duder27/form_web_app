@@ -1,22 +1,46 @@
 from flask import Flask, url_for, render_template, request
 
-app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
+app = Flask(__name__) 
 
 @app.route("/")
 def render_main():
-    return render_template('home.html')
+    return render_template('Inputs.html')
 
-@app.route("/response")
-def render_response():
-    color = request.args['color'] 
-    #The request object stores information about the request sent to the server.
-    #args is an ImmutableMultiDict (like a dictionary but can have mutliple values for the same key and can't be changed)
-    #The information in args is visible in the url for the page being requested. ex. .../response?color=blue
-    if color == 'pink':
-        reply = "That's my favorite color, too!"
+@app.route("/response1")
+def render_response1():
+    response1 = request.args['r1'] 
+    if response1 == 'Chatty':
+        reply = "That's my name, too!"
     else:
-        reply = "My favorite color is pink."
-    return render_template('response.html', response = reply)
+        reply = "That's a very nice name. My name is Chatty."
+    return render_template('Responses.html', response = reply)
+
+@app.route("/response2")
+def render_response2():
+    response1 = request.args['r2'] 
+    if response1 == 'Yes':
+        reply = "I like the rain too."
+    else:
+        reply = "I love the rain!"
+    return render_template('Responses.html', response = reply)
+
+@app.route("/response3")
+def render_response3():
+    response1 = request.args['r3'] 
+    if response1 == 'Spring':
+        reply = "Spring is my favorite season to."
+    else:
+        reply = "My favorite season is Spring."
+    return render_template('Responses.html', response = reply)
+
+@app.route("/response4")
+def render_response4():
+    response1 = request.args['r4'] 
+    if response1 == 'Chatty':
+        reply = "That's my name, too!"
+    else:
+        reply = "That's a very nice name. My name is Chatty."
+    return render_template('Responses.html', response = reply)
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
