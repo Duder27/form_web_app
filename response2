@@ -1,0 +1,14 @@
+<head>
+    <title>Like Rain?</title>
+  </head>
+  <body>
+
+    <form action='/response2'>
+      Do you like rain?<br>
+      <input type="text" name="r2">
+      <br><br>
+      <input type="submit">
+    </form>
+ </body>
+
+  </html>
