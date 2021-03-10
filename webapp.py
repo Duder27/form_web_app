@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def render_main():
-    return render_template('Inputs.html')
+    return render_template('home.html')
 
 @app.route("/response1")
 def render_response1():
