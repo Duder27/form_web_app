@@ -9,7 +9,7 @@ def render_main():
 @app.route("/response1")
 def render_response1():
     response1 = request.args['r1'] 
-    if response1 == 'Chatty':
+    if r1 == 'Chatty':
         reply = "That's my name, too!"
     else:
         reply = "That's a very nice name. My name is Chatty."
@@ -18,7 +18,7 @@ def render_response1():
 @app.route("/response2")
 def render_response2():
     response2 = request.args['r2'] 
-    if response2 == 'Yes':
+    if r2 == 'Yes':
         reply = "I like the rain too."
     else:
         reply = "I love the rain!"
@@ -27,7 +27,7 @@ def render_response2():
 @app.route("/response3")
 def render_response3():
     response3 = request.args['r3'] 
-    if response3 == 'Spring':
+    if r3 == 'Spring':
         reply = "Spring is my favorite season to."
     else:
         reply = "My favorite season is Spring."
@@ -36,7 +36,7 @@ def render_response3():
 @app.route("/response4")
 def render_response4():
     response3 = request.args['r4'] 
-    if response3 == 'Chatty':
+    if r3 == 'Chatty':
         reply = "That's my name, too!"
     else:
         reply = "That's a very nice name. My name is Chatty."
