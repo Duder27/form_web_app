@@ -28,7 +28,7 @@ def render_response2():
 def render_response3():
     response3 = request.args['r3'] 
     if r3 == 'Spring':
-        reply = "Spring is my favorite season to."
+        reply = "Spring is my favorite season too."
     else:
         reply = "My favorite season is Spring."
     return render_template('response3.html', r3 = reply)
