@@ -1,0 +1,15 @@
+<head>
+    <title>Favorite Season</title>
+  </head>
+  <body>
+
+    <form action='/response3'>
+      What is your favorite season?<br>
+      <input type="text" name="r3">
+      <br><br>
+      <input type="submit">
+    </form>
+    
+  </body>
+
+  </html>
