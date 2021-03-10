@@ -13,7 +13,7 @@ def render_response1():
         reply = "That's my name, too!"
     else:
         reply = "That's a very nice name. My name is Chatty."
-    return render_template('Responses.html', r1 = reply)
+    return render_template('response1.html', r1 = reply)
 
 @app.route("/response2")
 def render_response2():
@@ -22,7 +22,7 @@ def render_response2():
         reply = "I like the rain too."
     else:
         reply = "I love the rain!"
-    return render_template('Responses.html', r2 = reply)
+    return render_template('response2.html', r2 = reply)
 
 @app.route("/response3")
 def render_response3():
@@ -31,7 +31,7 @@ def render_response3():
         reply = "Spring is my favorite season to."
     else:
         reply = "My favorite season is Spring."
-    return render_template('Responses.html', r3 = reply)
+    return render_template('response3.html', r3 = reply)
 
 @app.route("/response4")
 def render_response4():
@@ -40,7 +40,7 @@ def render_response4():
         reply = "That's my name, too!"
     else:
         reply = "That's a very nice name. My name is Chatty."
-    return render_template('Responses.html', r4 = reply)
+    return render_template('response4.html', r4 = reply)
     
 if __name__=="__main__":
     app.run(debug=False, port=54321)
