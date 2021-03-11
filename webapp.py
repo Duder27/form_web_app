@@ -16,8 +16,7 @@ def render_response():
     return render_template('response.html', response = reply)
     
     
-@app.route("/")
-def render_main():
+
     return render_template('q2t.html')
 
 
@@ -30,8 +29,7 @@ def render_response():
         reply = "I love rain!"
     return render_template('response.html', response = reply)
 
-@app.route("/")
-def render_main():
+
     return render_template('q3t.html')
 
 @app.route("/response")
